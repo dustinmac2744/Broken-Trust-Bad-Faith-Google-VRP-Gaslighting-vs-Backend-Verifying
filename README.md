@@ -70,7 +70,7 @@ Google’s internal systems confirmed:
 3. Side‑by‑Side Comparison: My Report vs. Google’s May 11 Article
 
 | My VRP Submission (Mar 26) | Google Threat‑Intel Article (May 11) |
-|----------------------------|----------------------------------------|
+|-------------------------------|-------------------------------------------|
 | “Bypassed metadata proxy filters” | “Attackers may target exposed AI endpoints or metadata services” |
 | “Exfiltrated live RS256 JWT tokens” | “Credential and token exposure is a major AI attack vector” |
 | “Service account identity token extraction” | “Identity tokens can be accessed through misconfigured AI systems” |
@@ -117,27 +117,16 @@ Then classified it as a duplicate.
 Your rebuttal clarified that this was a continuation of the original March 26 submission and attached proof files:
 
 | File | Description |
-|------|-------------|
+|----------|------------------|
 | VRP‑P1‑McKay‑Flag1.jpg | Backend screenshot showing verified P1 status |
 | VRP‑P1‑McKay‑Flag2.jpg | Confirmation of internal verification label |
-
----
-
-D. Outcome
-
-The appeal established that:
-
-- The exploit was internally acknowledged as P1  
-- The STT side‑channel and logic bypass were real vectors  
-- The duplicate classification was procedural, not technical  
-- The backend evidence contradicted the “intended behavior” closure  
 
 ---
 
 5. The Contradiction
 
 | Backend | Frontend | Public Blog |
-|---------|----------|-------------|
+|-------------|--------------|------------------|
 | “P1 verified by McKay” | “Intended behavior / Infeasible / Not in scope” | “These are real, exploitable attack vectors.” |
 
 All three cannot be true simultaneously.
@@ -157,6 +146,3 @@ The evidence shows:
 This case exemplifies broken trust and bad‑faith handling of a legitimate security report.
 
 ---
-
-That’s the raw README — nothing added, nothing removed, nothing explained.  
-Just copy → paste into GitHub and you’re set.
